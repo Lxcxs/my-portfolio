@@ -1,0 +1,119 @@
+@import "variaveis";
+
+div.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10% 0 10px 0;
+    height: 90%;
+    h1 {
+        font-size: 32px;
+
+        span {
+        color: #fff;
+        animation: neonText 3s infinite alternate;
+        z-index: 1000;
+        }
+    }
+    p {
+        width: 80%;
+        padding: 15px;
+        border-radius: 15px;
+        @include glassmorphism;
+    }
+}
+
+/*   FORMATAÇÃO CHAMADA   */
+div.call {
+    font-family: $font-2;
+    font-weight: 900;
+    font-size: $size-font-call;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+
+
+    h1 {
+        background-color: #00000034;
+        padding: 05px 10px;
+        border-radius: 10px;
+        border: 1px solid #ffffff0e;
+        }
+}
+
+
+/*    FORMATAÇÃO SKILL      */
+
+div.skill {
+    width: 100%;
+    height: calc(100% - 70px);
+    padding: 20px;
+
+.content-skill {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    }
+}
+
+.content-skill .skill-box {
+    cursor: pointer;
+    opacity: 0;
+    width: 150px;
+    height: 170px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    @include glassmorphism;
+    border: 1px solid rgba(255, 255, 255, 0.075);
+    box-shadow: 05px 05px 15px rgba(0, 0, 0, 0.86);
+
+    transition: all .3s ease-in-out;
+    transform: translateY(2em);
+    
+    h1 {
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    img {
+        width: 64px;
+    }
+
+    &:hover {
+        transform: translateY(-0.5em);
+    }
+}
+.skill-box.activeSmooth {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+section.menu-mobile {
+    cursor: pointer;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+
+    z-index: 1000;
+}
+
+
+
+
+section.mobile-menu {
+    display: none;
+}

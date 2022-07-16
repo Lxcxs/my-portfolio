@@ -1,0 +1,29 @@
+@import "variaveis";
+
+.content-column section {
+margin: 0 0 70px 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+width: 100%;
+height: auto;
+}
+
+section.content {
+    margin-left: 380px;
+    width: calc(100% - 350px);
+    height: auto;
+    padding: 30px 10px;
+    border-radius: 25px;
+
+    @include glassmorphism;
+    -webkit-box-shadow: -6px 9px 17px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: -6px 9px 17px 2px rgba(0, 0, 0, 0.3);
+    z-index: -100;
+
+    &:nth-child(2) {
+        height: auto;
+    }
+    
+}

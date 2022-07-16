@@ -1,0 +1,46 @@
+@import "variaveis";
+@import "animation";
+@import "content-column";
+@import "header-style";
+@import "mediaquerys";
+@import "sections";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-1;
+  color: $font-color;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  @include background;
+}
+
+main {
+  margin-top: 70px;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 1250px;
+  height: auto;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
