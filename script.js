@@ -11,45 +11,38 @@ function animationMenu() {
 
   sectionMenu.addEventListener('click', active)
 }
-
 animationMenu()
 
 function initOpenSmooth() {
   const links = document.querySelectorAll('#js-smooth');
   const skills = document.querySelectorAll('#js-skill');
+  const sections = document.querySelectorAll('.content');
+  console.log(sections)
 
   setTimeout(() => {
     for (let i = 0; i < links.length; i++) {
         setTimeout(() => {
             links[i].classList.add('activeSmooth')
-        }, 200 * i)
+        }, 350 * i)
     }
-  }, 200);
+  }, 500);
 
   setTimeout(() => {
     for (let i = 0; i < skills.length; i++) {
         setTimeout(() => {
             skills[i].classList.add('activeSmooth')
-        }, 200 * i)
+        }, 300 * i)
     }
-  }, 800);
+  }, 1500);
+
+  setTimeout(() => {
+    for (let i = 0; i < sections.length; i++) {
+      setTimeout(() => {
+        sections[i].classList.add('activeSmooth')
+      }, 500 * i)
+    }
+  }, 1000)
 
   
 }
 initOpenSmooth();
-
-function initLetter() {
-  const texto = document.querySelector('#js-letter');
-  const textArr = Array.from(texto.innerText);
-  texto.innerText = '';
-  console.log(texto)
-
-  setTimeout(() => {
-      for (let i = 0; i < textArr.length; i++) {
-          setTimeout(() => {
-              texto.innerHTML += textArr[i];
-          }, 150 * i)
-      }
-  }, 200)
-}
-// initLetter();
