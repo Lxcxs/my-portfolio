@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "variaveis.css",
+	"sources": [
+		"../sass/variaveis.scss"
+	],
+	"sourcesContent": [
+		"$font-1: 'Fira Code', monospace;\r\n$font-2: 'Helvetica', sans-serif;\r\n$font-3: 'IBM Plex Mono', monospace;\r\n$call-font: 'Kanit', sans-serif;\r\n$size-font-call: 24px;\r\n\r\n$font-color: #e4eee5;\r\n$backg-color: #13212c;\r\n$backg-section: url(../img/aaaasss.png);\r\n$backg-menuHover: #1f1f1f;\r\n\r\n$neon-color: #0084ff;\r\n$neon-effect: 0 0 4px $neon-color,\r\n0 0 11px $neon-color,\r\n0 0 19px $neon-color,\r\n0 0 40px $neon-color,\r\n0 0 80px $neon-color,\r\n0 0 90px $neon-color,\r\n0 0 100px $neon-color,\r\n0 0 150px $neon-color;\r\n\r\n$neon-effect2: 0 0 02px $neon-color,\r\n0 0 04px $neon-color,\r\n0 0 06px $neon-color,\r\n0 0 10px $neon-color,\r\n0 0 20px $neon-color;\r\n\r\n\r\n@mixin neonTextStyle {\r\n  text-shadow:\r\n  0 0 2px #b1efff,\r\n  0 0 4px #b1efff,\r\n  0 0 6px #b1efff,\r\n  0 0 8px $neon-color,\r\n  0 0 10px $neon-color,\r\n  0 0 15px $neon-color,\r\n  0 0 20px $neon-color,\r\n  0 0 40px $neon-color;\r\n}\r\n\r\n@mixin background {\r\n  background: url(../img/background.png)\r\n}\r\n\r\n\r\n"
+	],
+	"names": [],
+	"mappings": ""
+}

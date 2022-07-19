@@ -13,7 +13,7 @@ section.header {
     gap: 50px;
     @include glassmorphism;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.219);
     animation: openSmooth 1s ease-in-out;
 
     transform: translateY();
@@ -124,7 +124,7 @@ section.header {
     align-items: center;
     @include glassmorphism;
     border-radius: 20px;
-    border: 2px solid rgba(255, 255, 255, 0.089);
+    border: 2px solid rgba(255, 255, 255, 0.178);
 
     .socialmedia {
         width: 100%;
