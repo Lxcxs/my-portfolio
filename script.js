@@ -46,3 +46,16 @@ function initOpenSmooth() {
   
 }
 initOpenSmooth();
+
+function openEmail() {
+  const email = document.querySelector('.email');
+  const li = document.querySelector('#emailover');
+
+  li.addEventListener('mouseover', () => {
+    email.classList.add('ativo');
+  });
+  li.addEventListener('mouseout', () => {
+    email.classList.remove('ativo');
+  });
+}
+openEmail();
